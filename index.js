@@ -23,11 +23,15 @@ class Manager extends Employee {
 
   logManagerInfo = () =>
     this.name + " " + this.yearJoined + " " + this.bonusPercentage;
+
+  getWorkingYears = () => (this.yearJoined = 2023 - this.yearJoined);
 }
 //const manager1 = new Manager("Ahmad", "Manager", 2010, 7000, 1000);
 //console.log(manager1.salaryIncrease());
 
-//const employees = new Employee("John Doe", "Developer", 2015, 5000);
-//console.log(employees);
+const employees = new Employee(employeesJSON);
+console.log(employees);
+
 const manager = new Manager("John Doe", "Developer", 2015, 5000, 1000);
 console.log(manager.logManagerInfo());
+console.log(manager.getWorkingYears());
