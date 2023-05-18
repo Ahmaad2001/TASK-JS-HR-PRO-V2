@@ -31,7 +31,8 @@ class Manager extends Employee {
 
 const employees = new Employee(employeesJSON);
 console.log(employees);
+console.log(employees.name.idBadge());
 
-const manager = new Manager("John Doe", "Developer", 2015, 5000, 1000);
-console.log(manager.logManagerInfo());
-console.log(manager.getWorkingYears());
+//const manager = new Manager(managersJSON);
+//console.log(manager.logManagerInfo());
+//console.log(manager.getWorkingYears());
